@@ -1,0 +1,3 @@
+rootProject.name = 'cross_platform_sample'
+
+include ':app'
