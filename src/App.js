@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
+import Welcome from './components/Welcome';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\nCmd+D or shake for dev menu',
@@ -13,11 +14,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
   instructions: {
     textAlign: 'center',
     color: '#333333',
@@ -29,7 +25,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
+        <Welcome />
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
       </View>
