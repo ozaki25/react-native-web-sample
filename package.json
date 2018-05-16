@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "build-web": "webpack-dev-server -d --config ./web/webpack.config.js --inline --hot --colors",
+    "build-web-prod": "webpack -p --config ./web/webpack.config.js"
   },
   "dependencies": {
     "react": "^16.3.2",
