@@ -8,7 +8,8 @@
     "build-web": "webpack-dev-server -d --config ./web/webpack.config.js --inline --hot --colors",
     "build-web-prod": "webpack -p --config ./web/webpack.config.js",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "cd storybook-static && git init && git add -A && git commit -m 'deploy' && git push -f git@github.com:ozaki25/react-native-web-sample.git master:gh-pages"
   },
   "dependencies": {
     "react": "^16.2.0",
